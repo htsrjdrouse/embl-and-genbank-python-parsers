@@ -1,0 +1,13 @@
+Richard Rouse rjdrouse@htsresources.com
+
+These are python scripts that parse embl and ncbi formatted files and loads it into mysql relational database. It also includes the sql for creating tables that are formatted to work with it. 
+
+There are 2 different types of sql files:
+
+1) uprtcc.sql contains the table structure of loading embl data into a table. The embl cc tab contains alot of data so there is a separate sql for handling that. The htsr_embl_parser_mysql.loader.py script is used for loading embl dat into this table. 
+2) cctab.sql will contain this detailed cc data. The embl.cc.loader.mysql.table.py is used to parse this data up and load into mysql. 
+
+There is also a genbank parser, htsr_genbank_parser_mysql.loader.py. There is not sql file that defines the table structure but its straightforward to figure that out.
+
+ 
+
